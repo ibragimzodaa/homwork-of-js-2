@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: sans-serif;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Please enter a number</h1>
+    <input class="nam" type="text">
+    <button class="btn">submit</button>
+    <p class="p"></p>
+    <script>
+const nam = document.querySelector('.nam');
+const btn = document.querySelector('.btn');
+const p = document.querySelector('.p');
+let cnt = 10;
+let cnt1 = 1;
+btn.onclick=()=>{
+    if(+nam.value<cnt && nam.value>cnt1){
+        p.innerHTML="Welcome"
+        p.style.color = "green"
+    }
+    else{
+        p.innerHTML="Goodbye"
+        p.style.color = "red"
+    }
+}
+    </script>
+</body>
+</html>
